@@ -47,7 +47,7 @@ export default function NavBar() {
               >
                 {/* Sliding active background */}
                 {isActive && (
-                  <span className="absolute inset-0 -z-10 rounded-lg bg-gradient-to-r from-blue-600/20 to-purple-600/20 blur-md animate-pulse" />
+                  <span className="absolute inset-0 -z-10 rounded-lg bg-linear-to-r from-blue-600/20 to-purple-600/20 blur-md animate-pulse" />
                 )}
 
                 {/* Icon */}
@@ -62,8 +62,8 @@ export default function NavBar() {
 
                 {/* Animated underline */}
                 <span
-                  className={`absolute left-0 -bottom-1 h-[2px] w-full origin-left
-                    bg-gradient-to-r from-blue-500 to-purple-500
+                  className={`absolute left-0 -bottom-1 h-0.5 w-full origin-left
+                    bg-linear-to-r from-blue-500 to-purple-500
                     transition-transform duration-300
                     ${isActive
                       ? "scale-x-100"
